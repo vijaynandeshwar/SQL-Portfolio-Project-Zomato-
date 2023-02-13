@@ -1,0 +1,5 @@
+
+#1.What is total amount each customer spent on zomato?
+select a.userid,sum(b.price) total_amount_spent from sales a inner join product b on a.product_id=b.product_id
+group by a.userid
+
